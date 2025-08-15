@@ -31,22 +31,20 @@ A user-friendly Weather Dashboard that allows users to search for any city and v
 - **JavaScript (ES6+)**
 - **[OpenWeather API](https://openweathermap.org/api)**
 
----
-
 ## 📂 Project Structure
 
+```
 📁 weather-dashboard/
-├── index.html ← Main HTML file
-├── style.css ← Styling for the app
-├── script.js ← JavaScript logic & API calls
-├── README.md ← Project documentation
-└── 📁 screenshots/ ← Screenshots used in README
-├── search-city.png
-├── current-weather.png
-└── five-day-forecast.png
+├── index.html                 ← Main HTML file
+├── style.css                  ← Styling for the app
+├── script.js                  ← JavaScript logic & API calls
+├── README.md                  ← Project documentation
+└── 📁 screenshots/            ← Screenshots used in README
+    ├── search-city.png
+    ├── current-weather.png
+    └── five-day-forecast.png
+```
 
-
----
 
 ## 📸 Screenshots
 
