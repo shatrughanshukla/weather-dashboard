@@ -42,7 +42,8 @@ A user-friendly Weather Dashboard that allows users to search for any city and v
 └── 📁 screenshots/            ← Screenshots used in README
     ├── search-city.png
     ├── current-weather.png
-    └── five-day-forecast.png
+    ├── five-day-forecast.png
+    └── full-dashboard-overview.png
 ```
 
 
