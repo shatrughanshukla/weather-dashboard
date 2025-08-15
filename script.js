@@ -1,4 +1,3 @@
-// IMPORTANT: Insert your OpenWeatherMap API key below
 const API_KEY = "a64e4d94e5dbf62e285c7d2a654a4287";
 
 const form = document.getElementById("weather-form");
@@ -17,7 +16,6 @@ form.addEventListener("submit", async function (e) {
   forecastDiv.innerHTML = "";
   forecastTitle.style.display = "none";
   try {
-    // Fetch 5-day/3-hour forecast by city name
     const forecastRes = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(
         city
@@ -34,7 +32,6 @@ form.addEventListener("submit", async function (e) {
 });
 
 function renderCurrentWeatherFromForecast(data) {
-  // Use the first item as the current weather
   const current = data.list[0];
   const cityName = data.city.name;
   const country = data.city.country;
@@ -57,7 +54,6 @@ function renderCurrentWeatherFromForecast(data) {
 }
 
 function renderForecastFromForecast(data) {
-  // Group by day, pick the forecast closest to 12:00 for each day
   const daily = {};
   data.list.forEach((item) => {
     const date = new Date(item.dt * 1000);
@@ -67,7 +63,6 @@ function renderForecastFromForecast(data) {
       daily[day] = { ...item, hour };
     }
   });
-  // Skip today, show next 5 days
   const days = Object.keys(daily).slice(1, 6);
   forecastDiv.innerHTML = "";
   days.forEach((day) => {
