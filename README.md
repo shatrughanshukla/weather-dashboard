@@ -31,7 +31,6 @@ A user-friendly Weather Dashboard that allows users to search for any city and v
 - **JavaScript (ES6+)**
 - **[OpenWeather API](https://openweathermap.org/api)**
 
-```
 ## 📂 Project Structure
 
 ```
